@@ -10,9 +10,10 @@ MovingMorph(int x, int y) {
 		super(x, y);
 	}
 
-public void update(int x, int y, Graphics g, int width , int height) {
-	Polymorph s = new Bluemorph(x,y);
-g.drawRect(x++, y++, width, height);
+public void update(int a, int b) {
+	x = a++;
+	y = b++;
+	
 }
 
 @Override

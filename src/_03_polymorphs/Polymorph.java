@@ -5,15 +5,23 @@ import java.awt.Graphics;
 public abstract class Polymorph {
     protected int x;
     protected int y;
+ 
+    MovingMorph abc = new MovingMorph();
+
     
-     
     
+int a = x;
+int b = y;
+
+   
+	
     public static void main(String[] args) {
-    	MovingMorph n = new MovingMorph(x,y);
-    	n.update(x, y, g, 50, 50);
+    	//MovingMorph morph = new MovingMorph(,);
+    	//morph.
+    	
 	}
     
-    int getx() {
+     int getx() {
     	return x;
     }
     int setx(int a) {
@@ -21,7 +29,7 @@ public abstract class Polymorph {
     return x;
     }
     
-    int gety() {
+     int gety() {
     	return y;
     }
     int sety(int s) {
