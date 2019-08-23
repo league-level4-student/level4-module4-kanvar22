@@ -5,20 +5,9 @@ import java.awt.Graphics;
 public abstract class Polymorph {
     protected int x;
     protected int y;
- 
-    MovingMorph abc = new MovingMorph();
-
-    
-    
-int a = x;
-int b = y;
-
-   
 	
+    
     public static void main(String[] args) {
-    	//MovingMorph morph = new MovingMorph(,);
-    	//morph.
-    	
 	}
     
      int getx() {
@@ -42,7 +31,9 @@ int b = y;
    	 this.y = y;
     }
     
-
+    public void update(){
+      	 
+    }
     
     public abstract void draw(Graphics g);
 }
