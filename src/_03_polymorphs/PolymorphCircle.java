@@ -7,6 +7,7 @@ public class PolymorphCircle extends Polymorph{
 
 	protected int width = 50;
 	protected int height = 50;
+	int angle = 0;
 	
 	int getWidth() {
 		return width;
@@ -33,5 +34,11 @@ public class PolymorphCircle extends Polymorph{
 		g.fillRect(x, y, width, height);
 		
 	}
+	public void update() {
+		x += Math.sin(angle) * 100;
+		y += Math.cos(angle) * 100;
+		angle ++;
+	}
+	
 
 }

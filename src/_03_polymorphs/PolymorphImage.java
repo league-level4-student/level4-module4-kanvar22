@@ -1,10 +1,14 @@
 package _03_polymorphs;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
 
 public class PolymorphImage extends Polymorph{
 	protected int width = 50;
 	protected int height = 50;
+	BufferedImage img;
 	
 	int getWidth() {
 		return width;
@@ -27,7 +31,16 @@ public class PolymorphImage extends Polymorph{
 
 	@Override
 	public void draw(Graphics g) {
-		g.setColor(Color.red);
+		
+		try {
+			img = ImageIO.read(this.getClass().getResourceAsStream("download.png"));
+		}
+		catch{
+			
+		}
+		
+		
+		g.drawImage(img, x, y, width, height, null);
 		g.fillRect(x, y, width, height);
 		
 	}
