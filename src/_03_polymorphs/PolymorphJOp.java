@@ -48,7 +48,7 @@ public class PolymorphJOp extends Polymorph implements MouseListener{
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
-		JOptionPane.showMessageDialog(null, "Hello");
+		JOptionPane.showMessageDialog(null, "You have clicked your mouse");
 	}
 	@Override
 	public void mouseReleased(MouseEvent e) {

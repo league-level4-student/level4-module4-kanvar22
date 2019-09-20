@@ -27,17 +27,17 @@ public class PolymorphImage extends Polymorph{
 	
 	PolymorphImage(int x, int y) {
 		super(x, y);
+	
+		try {
+			img = ImageIO.read(this.getClass().getResourceAsStream("download.png"));
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void draw(Graphics g) {
-		
-		try {
-			img = ImageIO.read(this.getClass().getResourceAsStream("download.png"));
-		}
-		catch{
-			
-		}
 		
 		
 		g.drawImage(img, x, y, width, height, null);

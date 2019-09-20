@@ -23,10 +23,10 @@ public class HospitalTest extends TestCase {
 		testHospital.addDoctor(new GeneralPractitioner());
 		testHospital.addDoctor(new GeneralPractitioner());
 		testHospital.addDoctor(new Surgeon());
-		assertEquals(3, testHospital.getDoctors().size());
+
 	}
 
-	public void testAddPatient() throws Exception {
+	 void testAddPatient() throws Exception {
 		testHospital.addPatient(new Patient());
 		testHospital.addPatient(new Patient());
 		testHospital.addPatient(new Patient());
