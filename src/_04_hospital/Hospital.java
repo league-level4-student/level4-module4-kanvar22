@@ -4,29 +4,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Hospital {
-	ArrayList<String> doctors = new ArrayList<String>();
+	
+	ArrayList<Doctor> doctors = new ArrayList<Doctor>();
 		
 	
-	ArrayList<String> patients = new ArrayList<String>();
+	ArrayList<Patient> patients = new ArrayList<Patient>();
 	
 	public void addDoctor(Doctor d) {
-	doctors.add("" + d);
+	doctors.add(d);
 	
 	}
 
 	public void addPatient(Patient patient) {
 		// TODO Auto-generated method stub
-		patients.add("" + patient);
+		patients.add(patient);
 	}
 
-	public List<Doctor> getPatients() {
+	public ArrayList<Patient> getPatients() {
 		// TODO Auto-generated method stub
-		return null;
+		return patients;
 	}
 
 	public void assignPatientsToDoctors() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public ArrayList<Doctor> getDoctors() {
+		// TODO Auto-generated method stub
+		return doctors;
 	}
 	
 }
