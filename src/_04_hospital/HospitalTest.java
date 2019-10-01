@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import junit.framework.TestCase;
@@ -26,7 +27,7 @@ public class HospitalTest extends TestCase {
 
 	}
 
-	 void testAddPatient() throws Exception {
+	public void testAddPatient() throws Exception {
 		testHospital.addPatient(new Patient());
 		testHospital.addPatient(new Patient());
 		testHospital.addPatient(new Patient());
@@ -97,7 +98,29 @@ assertTrue(testDoctor.getPatients().size() == 3);
 
 	public void test8Patients() throws Exception {
 		// TODO: add 3 doctors to hospital
-
+Hospital hos = new Hospital ();
+Doctor testDoctor1 = new Doctor();
+Doctor testDoctor2 = new Doctor();
+Doctor testDoctor3 = new Doctor();
+Patient patient1 = new Patient();
+Patient patient2 = new Patient();
+Patient patient3 = new Patient();
+Patient patient4 = new Patient();
+Patient patient5 = new Patient();
+Patient patient6 = new Patient();
+Patient patient7 = new Patient();
+Patient patient8 = new Patient();
+hos.addDoctor(testDoctor1);
+hos.addDoctor(testDoctor2);
+hos.addDoctor(testDoctor3);
+hos.addPatient(patient1);
+hos.addPatient(patient2);
+hos.addPatient(patient3);
+hos.addPatient(patient4);
+hos.addPatient(patient5);
+hos.addPatient(patient6);
+hos.addPatient(patient7);
+hos.addPatient(patient8);
 		// TODO: add 8 patients to hospital
 
 		// hospital assigns patients to doctors

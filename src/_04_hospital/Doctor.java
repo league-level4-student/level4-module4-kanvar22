@@ -5,12 +5,21 @@ import java.util.List;
 
 public class Doctor {
 ArrayList <Patient> patients = new ArrayList<Patient>();
+//boolean patientSize;
 
-boolean medicine;
 
-	public void assignPatient(Patient patient) {
+//Patient pat = new Patient();
+
+
+	public void assignPatient(Patient patient) throws DoctorFullException{
 		// TODO Auto-generated method stub
-patients.add(patient);
+if (patients.size() <= 2) {
+	patients.add(patient);
+}
+else {
+	throw new DoctorFullException("Too many patients");
+}
+
 	}
 
 	public ArrayList<Patient> getPatients() {
@@ -22,10 +31,9 @@ patients.add(patient);
 	public void doMedicine() {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < patients.size(); i++) {
-			
-			
+			patients.get(i).feelCaredFor = true;
 		}
-		medicine = true;
+		
 	}
 
 	public Object performsSurgery() {
