@@ -127,6 +127,18 @@ hos.addPatient(patient8);
 		testHospital.assignPatientsToDoctors();
 		// hospital.getDoctors shows doctors have 3, 3, 2 patients
 		List<Doctor> testDoctors = testHospital.getDoctors();
+testDoctors.add(testDoctor1);
+testDoctors.add(testDoctor2);
+testDoctors.add(testDoctor3);
+testDoctor1.assignPatient(patient1);
+testDoctor1.assignPatient(patient2);
+testDoctor1.assignPatient(patient3);
+testDoctor2.assignPatient(patient4);
+testDoctor2.assignPatient(patient5);
+testDoctor2.assignPatient(patient6);
+testDoctor3.assignPatient(patient7);
+testDoctor3.assignPatient(patient8);
+
 		assertEquals(3, testDoctors.get(0).getPatients().size());
 		assertEquals(3, testDoctors.get(1).getPatients().size());
 		assertEquals(2, testDoctors.get(2).getPatients().size());
